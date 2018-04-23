@@ -1,0 +1,44 @@
+﻿<Window x:Class="Viewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+        xmlns:dxp="http://schemas.devexpress.com/winfx/2008/xaml/printing"
+        Title="MainWindow" Height="350" Width="525"
+        dx:ThemeManager.ThemeName="Office2007Black">
+    <Grid>
+        <dxlc:DockLayoutControl Name="dockLayoutControl1">
+            <dxlc:GroupBox 
+                Header="groupBox1" 
+                Name="groupBox1" 
+                dxlc:DockLayoutControl.Dock="Top" 
+                Height="59" 
+                TitleVisibility="Hidden">
+                <TextBlock Name="textBlockTitle" Text="WPF Example" 
+                           FontFamily="Lucida Console" FontSize="20" FontWeight="ExtraBlack"/>
+            </dxlc:GroupBox>
+            <dxlc:GroupBox Header="groupBox2" Name="groupBox2" 
+                           dxlc:DockLayoutControl.AllowHorizontalSizing="True" 
+                           Width="117" TitleVisibility="Hidden">
+                <dxlc:LayoutControl Name="layoutControl1" Orientation="Vertical">
+                    <dxlc:LayoutItem Label="" Name="layoutItem2">
+                        <dxe:TextEdit Name="textEdit1" Text="{Binding OrderId}" />
+                    </dxlc:LayoutItem>
+                    <dxlc:LayoutItem Label="" Name="layoutItem1">
+                        <Button 
+                            Content="Orders" 
+                            Name="button1" 
+                            Visibility="{Binding ButtonVisible}"
+                            Command="{Binding ShowOrdersCommand}"
+                            />
+                    </dxlc:LayoutItem>
+                </dxlc:LayoutControl>
+            </dxlc:GroupBox>
+            <dxlc:GroupBox Header="groupBox3" Name="groupBox3" 
+                           dxlc:DockLayoutControl.Dock="Client" TitleVisibility="Hidden">
+                <dxp:DocumentPreview Name="documentPreview1" Model="{Binding ReportModel}" />
+            </dxlc:GroupBox>
+        </dxlc:DockLayoutControl>
+    </Grid>
+</Window>

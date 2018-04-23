@@ -1,0 +1,44 @@
+﻿<Window x:Class="Viewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+        xmlns:dxd="http://schemas.devexpress.com/winfx/2008/xaml/docking"
+        xmlns:local="clr-namespace:Viewer"
+        xmlns:dxp="http://schemas.devexpress.com/winfx/2008/xaml/printing"
+        Title="MainWindow" Height="700" Width="900"
+        dx:ThemeManager.ThemeName="Office2016White"
+        DataContext="{dxmvvm:ViewModelSource Type=local:MainViewModel}">
+    
+    <dxlc:LayoutControl Orientation="Vertical">
+        <dxlc:LayoutItem>
+            <TextBlock Text="Drill-Through Report" 
+                        FontFamily="Lucida Console" FontSize="20" FontWeight="ExtraBlack" Margin="24"/>
+        </dxlc:LayoutItem>
+        <dxlc:LayoutGroup Orientation="Horizontal" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <dxlc:GroupBox TitleVisibility="Hidden" HorizontalAlignment="Left" >
+                <dxlc:LayoutGroup ItemLabelsAlignment="Local" Orientation="Vertical" Width="150" >
+                    <dxlc:LayoutItem Label="Order Id: ">
+                        <dxe:TextEdit IsReadOnly="True" Text="{Binding OrderId, Mode=OneWay}" />
+                    </dxlc:LayoutItem>
+                    <dxlc:LayoutItem>
+                        <Button Content="Orders" Margin="0,9"
+                                Visibility="{Binding IsEnabled, Converter={dx:BooleanToVisibilityConverter}, RelativeSource={RelativeSource Self}}"
+                                Command="{Binding ShowOrdersCommand}" />
+                    </dxlc:LayoutItem>
+                </dxlc:LayoutGroup>
+            </dxlc:GroupBox>
+            <dxlc:GroupBox TitleVisibility="Hidden" Padding="0">
+                <dxp:DocumentPreviewControl RequestDocumentCreation="{Binding RequestDocumentCreation}" DocumentSource="{Binding Report}" >
+                    <dxmvvm:Interaction.Behaviors>
+                        <dxmvvm:EventToCommand EventName="DocumentPreviewMouseClick" PassEventArgsToCommand="True" Command="{Binding OnPreviewMouseClickCommand}" />
+                        <dxmvvm:EventToCommand EventName="DocumentPreviewMouseMove" PassEventArgsToCommand="True" Command="{Binding OnPreviewMouseMoveCommand}" />
+                    </dxmvvm:Interaction.Behaviors>
+                </dxp:DocumentPreviewControl>
+            </dxlc:GroupBox>
+        </dxlc:LayoutGroup>
+    </dxlc:LayoutControl>
+   
+</Window>

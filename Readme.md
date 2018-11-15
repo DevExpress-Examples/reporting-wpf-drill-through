@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/Viewer/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/Viewer/MainWindow.xaml))
+* **[MainWindowViewModel.cs](./CS/Viewer/MainWindowViewModel.cs) (VB: [MainWindowViewModel.vb](./VB/Viewer/MainWindowViewModel.vb))**
+<!-- default file list end -->
 # How to create a drill-through report in WPF
 
 

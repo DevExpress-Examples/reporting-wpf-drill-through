@@ -1,8 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewer", "Viewer\Viewer.csproj", "{CC77247F-2414-4DF3-A8F0-75B4A6AF0D1F}"
+# Visual Studio 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viewer", "Viewer\Viewer.Net5.csproj", "{CC77247F-2414-4DF3-A8F0-75B4A6AF0D1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reports", "Reports\Reports.csproj", "{2B3DE172-AE55-47ED-85A5-83ABF1BDB667}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reports", "Reports\Reports.Net5.csproj", "{2B3DE172-AE55-47ED-85A5-83ABF1BDB667}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

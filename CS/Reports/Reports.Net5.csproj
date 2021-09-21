@@ -1,0 +1,92 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Reports</RootNamespace>
+    <AssemblyName>Reports</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DefaultItemExcludes>obj*/**</DefaultItemExcludes>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="InvoiceReport.cs" />
+    <Compile Update="InvoiceReport.Designer.cs">
+      <DependentUpon>InvoiceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Northwind.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Northwind.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="OrderReport.cs" />
+    <Compile Update="OrderReport.Designer.cs">
+      <DependentUpon>OrderReport.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nwind.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Northwind.xsc">
+      <DependentUpon>Northwind.xsd</DependentUpon>
+    </None>
+    <None Update="Northwind.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Northwind.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Northwind.xss">
+      <DependentUpon>Northwind.xsd</DependentUpon>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="InvoiceReport.resx">
+      <DependentUpon>InvoiceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="OrderReport.resx">
+      <DependentUpon>OrderReport.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Charts" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Charts.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.CodeParser" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Data" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Images" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Office.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.PivotGrid.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Reporting.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.RichEdit.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.RichEdit.Export" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Sparkline.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Utils" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Utils.UI" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Win.Charts" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Win.PivotGrid" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Win.Printing" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Win.Reporting" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Win.RichEdit" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="21.1.*-*" />
+    <PackageReference Include="System.Data.OleDB" Version="5.0" />
+  </ItemGroup>
+</Project>

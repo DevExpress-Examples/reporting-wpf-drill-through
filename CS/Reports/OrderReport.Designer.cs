@@ -218,12 +218,12 @@
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.Gainsboro;
-            this.Header.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Header.Font = new DevExpress.Drawing.DXFont("Verdana", 15.75F);
             this.Header.Name = "Header";
             // 
             // LinkStyle
             // 
-            this.LinkStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkStyle.Font = new DevExpress.Drawing.DXFont("Verdana", 9.75F, DevExpress.Drawing.DXFontStyle.Underline);
             this.LinkStyle.ForeColor = System.Drawing.Color.Maroon;
             this.LinkStyle.Name = "LinkStyle";
             this.LinkStyle.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
@@ -238,8 +238,8 @@
             this.DataAdapter = this.customersTableAdapter;
             this.DataMember = "Customers";
             this.DataSource = this.northwind1;
-            this.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margins = new System.Drawing.Printing.Margins(96, 104, 100, 100);
+            this.Font = new DevExpress.Drawing.DXFont("Verdana", 9.75F);
+            this.Margins = new DevExpress.Drawing.DXMargins(96, 104, 100, 100);
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.Header,
             this.LinkStyle});

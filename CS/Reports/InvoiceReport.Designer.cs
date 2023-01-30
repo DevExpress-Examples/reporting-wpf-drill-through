@@ -129,7 +129,7 @@
             // 
             // DataStyle
             // 
-            this.DataStyle.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DataStyle.Font = new DevExpress.Drawing.DXFont("Verdana", 8.25F);
             this.DataStyle.Name = "DataStyle";
             this.DataStyle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
@@ -147,7 +147,7 @@
             this.lbShipName.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.lbShipName.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Invoices.ShipName")});
-            this.lbShipName.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.lbShipName.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F);
             this.lbShipName.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lbShipName.LocationFloat = new DevExpress.Utils.PointFloat(71.99999F, 0F);
             this.lbShipName.Name = "lbShipName";
@@ -164,7 +164,7 @@
             this.clFreight.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.clFreight.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Invoices.Freight", "{0:\'Frieght:  \'$#,##.00}")});
-            this.clFreight.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.clFreight.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold);
             this.clFreight.ForeColor = System.Drawing.Color.Black;
             this.clFreight.Name = "clFreight";
             this.clFreight.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 6, 0, 0, 100F);
@@ -185,7 +185,7 @@
             this.xrTableCell26,
             this.xrTableCell27,
             this.xrTableCell28});
-            this.xrTableRow4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.xrTableRow4.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrTableRow4.ForeColor = System.Drawing.Color.White;
             this.xrTableRow4.Name = "xrTableRow4";
             this.xrTableRow4.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
@@ -298,7 +298,7 @@
             this.xrTableCell33,
             this.xrTableCell34,
             this.xrTableCell35});
-            this.xrTableRow1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.xrTableRow1.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrTableRow1.ForeColor = System.Drawing.Color.White;
             this.xrTableRow1.Name = "xrTableRow1";
             this.xrTableRow1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
@@ -372,7 +372,7 @@
             this.clRequiredDate,
             this.clShippedDate,
             this.clShipVia});
-            this.xrTableRow2.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.xrTableRow2.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F);
             this.xrTableRow2.Name = "xrTableRow2";
             this.xrTableRow2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.xrTableRow2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
@@ -496,7 +496,7 @@
             this.clSubtotal.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.clSubtotal.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Invoices.ExtendedPrice")});
-            this.clSubtotal.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.clSubtotal.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold);
             this.clSubtotal.ForeColor = System.Drawing.Color.Black;
             this.clSubtotal.Name = "clSubtotal";
             this.clSubtotal.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 6, 0, 0, 100F);
@@ -510,7 +510,7 @@
             // LabelOddStyle
             // 
             this.LabelOddStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(201)))), ((int)(((byte)(148)))));
-            this.LabelOddStyle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelOddStyle.Font = new DevExpress.Drawing.DXFont("Verdana", 9.75F);
             this.LabelOddStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
             this.LabelOddStyle.Name = "LabelOddStyle";
             this.LabelOddStyle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomCenter;
@@ -518,7 +518,7 @@
             // LabelStyle
             // 
             this.LabelStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(244)))), ((int)(((byte)(188)))));
-            this.LabelStyle.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelStyle.Font = new DevExpress.Drawing.DXFont("Verdana", 11.25F);
             this.LabelStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
             this.LabelStyle.Name = "LabelStyle";
             this.LabelStyle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
@@ -542,7 +542,7 @@
             this.lbBillTo.BorderColor = System.Drawing.Color.White;
             this.lbBillTo.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.lbBillTo.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lbBillTo.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold);
             this.lbBillTo.ForeColor = System.Drawing.Color.Black;
             this.lbBillTo.LocationFloat = new DevExpress.Utils.PointFloat(297F, 0F);
             this.lbBillTo.Name = "lbBillTo";
@@ -558,7 +558,7 @@
             this.lbShipCountry.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.lbShipCountry.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Invoices.ShipCountry")});
-            this.lbShipCountry.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.lbShipCountry.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F);
             this.lbShipCountry.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lbShipCountry.LocationFloat = new DevExpress.Utils.PointFloat(71.99999F, 50F);
             this.lbShipCountry.Name = "lbShipCountry";
@@ -575,7 +575,7 @@
             this.lbCompanyName.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.lbCompanyName.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Invoices.CustomersCompanyName")});
-            this.lbCompanyName.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.lbCompanyName.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F);
             this.lbCompanyName.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lbCompanyName.LocationFloat = new DevExpress.Utils.PointFloat(363F, 0F);
             this.lbCompanyName.Name = "lbCompanyName";
@@ -622,7 +622,7 @@
             this.TitleStyle.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid;
             this.TitleStyle.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.TitleStyle.BorderWidth = 1;
-            this.TitleStyle.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitleStyle.Font = new DevExpress.Drawing.DXFont("Verdana", 15.75F);
             this.TitleStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(244)))), ((int)(((byte)(188)))));
             this.TitleStyle.Name = "TitleStyle";
             this.TitleStyle.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
@@ -660,7 +660,7 @@
             this.lbShipTo.BorderColor = System.Drawing.Color.White;
             this.lbShipTo.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.lbShipTo.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lbShipTo.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F, DevExpress.Drawing.DXFontStyle.Bold);
             this.lbShipTo.ForeColor = System.Drawing.Color.Black;
             this.lbShipTo.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.lbShipTo.Name = "lbShipTo";
@@ -676,7 +676,7 @@
             this.lbShipAddress.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.lbShipAddress.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Invoices.ShipAddress")});
-            this.lbShipAddress.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.lbShipAddress.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F);
             this.lbShipAddress.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lbShipAddress.LocationFloat = new DevExpress.Utils.PointFloat(71F, 25F);
             this.lbShipAddress.Name = "lbShipAddress";
@@ -693,7 +693,7 @@
             this.lbAddress1.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.lbAddress1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Invoices.Address")});
-            this.lbAddress1.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.lbAddress1.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F);
             this.lbAddress1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lbAddress1.LocationFloat = new DevExpress.Utils.PointFloat(363F, 25F);
             this.lbAddress1.Name = "lbAddress1";
@@ -710,7 +710,7 @@
             this.lbCountry.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.lbCountry.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Invoices.Country")});
-            this.lbCountry.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.lbCountry.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F);
             this.lbCountry.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lbCountry.LocationFloat = new DevExpress.Utils.PointFloat(363F, 50F);
             this.lbCountry.Name = "lbCountry";
@@ -748,7 +748,7 @@
             // DataStyleOdd
             // 
             this.DataStyleOdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(244)))), ((int)(((byte)(188)))));
-            this.DataStyleOdd.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DataStyleOdd.Font = new DevExpress.Drawing.DXFont("Verdana", 8.25F);
             this.DataStyleOdd.Name = "DataStyleOdd";
             this.DataStyleOdd.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
@@ -769,7 +769,7 @@
             // 
             this.xrLabel1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Invoices.OrderID", "{0:Invoice #}")});
-            this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel1.Font = new DevExpress.Drawing.DXFont("Times New Roman", 18F);
             this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(1.999982F, 0F);
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -822,7 +822,7 @@
             this.clUnitPrice,
             this.clDiscount,
             this.clExtPrice});
-            this.xrTableRow5.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.xrTableRow5.Font = new DevExpress.Drawing.DXFont("Tahoma", 8.25F);
             this.xrTableRow5.Name = "xrTableRow5";
             this.xrTableRow5.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.xrTableRow5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
@@ -852,8 +852,8 @@
             this.ReportPrintOptions.DetailCountOnEmptyDataSource = 0;
             this.DisplayName = "Invoice";
             this.FilterString = "[OrderID] = ?OrderId";
-            this.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margins = new System.Drawing.Printing.Margins(99, 95, 100, 75);
+            this.Font = new DevExpress.Drawing.DXFont("Verdana", 9.75F);
+            this.Margins = new DevExpress.Drawing.DXMargins(99, 95, 100, 75);
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.OrderId});
             this.ReportPrintOptions.PrintOnEmptyDataSource = false;

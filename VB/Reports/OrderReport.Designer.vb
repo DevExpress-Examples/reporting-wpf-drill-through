@@ -195,12 +195,12 @@
             ' Header
             ' 
             Me.Header.BackColor = System.Drawing.Color.Gainsboro
-            Me.Header.Font = New System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
+            Me.Header.Font = New DevExpress.Drawing.DXFont("Verdana", 15.75F)
             Me.Header.Name = "Header"
             ' 
             ' LinkStyle
             ' 
-            Me.LinkStyle.Font = New System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, (CByte(0)))
+            Me.LinkStyle.Font = New DevExpress.Drawing.DXFont("Verdana", 9.75F, DevExpress.Drawing.DXFontStyle.Underline)
             Me.LinkStyle.ForeColor = System.Drawing.Color.Maroon
             Me.LinkStyle.Name = "LinkStyle"
             Me.LinkStyle.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -211,8 +211,8 @@
             Me.DataAdapter = Me.customersTableAdapter
             Me.DataMember = "Customers"
             Me.DataSource = Me.northwind1
-            Me.Font = New System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
-            Me.Margins = New System.Drawing.Printing.Margins(96, 104, 100, 100)
+            Me.Font = New DevExpress.Drawing.DXFont("Verdana", 9.75F)
+            Me.Margins = New DevExpress.Drawing.DXMargins(96, 104, 100, 100)
             Me.StyleSheet.AddRange(New DevExpress.XtraReports.UI.XRControlStyle() { Me.Header, Me.LinkStyle})
             Me.Version = "11.1"
             DirectCast(Me.northwind1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0-windows</TargetFramework>
@@ -26,32 +26,32 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Charts" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Charts.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.CodeParser" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Data" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Data.Desktop" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Images" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Mvvm" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Office.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.PivotGrid.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Printing.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Reporting.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.RichEdit.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.RichEdit.Export" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Sparkline.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Utils" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Win.PivotGrid" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Win.Printing" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Win.RichEdit" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Docking" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.DocumentViewer.Core" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.LayoutControl" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Printing" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Reporting" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Themes.Office2016White" Version="22.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="22.2.*-*" />
+    <PackageReference Include="DevExpress.Charts" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Charts.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.CodeParser" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Data" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Images" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Mvvm" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Office.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.PivotGrid.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Reporting.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.RichEdit.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.RichEdit.Export" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Sparkline.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Utils" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Win.PivotGrid" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Win.Printing" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Win.RichEdit" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Docking" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.DocumentViewer.Core" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.LayoutControl" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Printing" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Reporting" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.Office2016White" Version="23.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="23.1.*-*" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Reports\Reports.Net5.csproj" />

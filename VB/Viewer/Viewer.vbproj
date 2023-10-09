@@ -1,22 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{CC77247F-2414-4DF3-A8F0-75B4A6AF0D1F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace></RootNamespace>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>Viewer</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <OptionExplicit>On</OptionExplicit>
-    <OptionCompare>Binary</OptionCompare>
-    <OptionStrict>Off</OptionStrict>
-    <OptionInfer>On</OptionInfer>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -24,10 +25,10 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineDebug>true</DefineDebug>
-    <DefineTrace>true</DefineTrace>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -35,87 +36,30 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineDebug>false</DefineDebug>
-    <DefineTrace>true</DefineTrace>
+    <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.Charts.v13.2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Data.v13.2, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.Data.v13.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.PivotGrid.v13.2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.Printing.v13.2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.Office.v13.2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.RichEdit.v13.2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.Utils.v13.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.Mvvm.v13.2, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.Xpf.Mvvm.v13.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.Core.v13.2, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.Xpf.Core.v13.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.Docking.v13.2, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.Xpf.Docking.v13.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.LayoutControl.v13.2, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.Xpf.LayoutControl.v13.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.Printing.v13.2, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.Xpf.Printing.v13.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.Themes.Office2007Black.v13.2, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.Xpf.Themes.Office2007Black.v13.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.XtraCharts.v13.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.XtraPivotGrid.v13.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.Sparkline.v13.2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.XtraReports.v13.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.XtraPrinting.v13.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Test_Examples\TestFolder\Dlls\13.2.3\DevExpress.XtraRichEdit.v13.2.dll</HintPath>
-    </Reference>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Mvvm.v13.2, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.Core.v13.2, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.Docking.v13.2, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.LayoutControl.v13.2, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.Printing.v13.2, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.Themes.Office2007Black.v13.2, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -133,7 +77,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="Application.xaml">
+    <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
@@ -141,8 +85,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="Application.xaml.vb">
-      <DependentUpon>Application.xaml</DependentUpon>
+    <Compile Include="App.xaml.vb">
+      <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="MainWindow.xaml.vb">
@@ -153,28 +97,29 @@
   <ItemGroup>
     <Compile Include="MainWindowViewModel.vb" />
     <Compile Include="MainWindowViewModel.Partial.vb" />
-    <Compile Include="My Project\AssemblyInfo.vb">
+    <Compile Include="Properties\AssemblyInfo.vb">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
+    <Compile Include="Properties\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Settings.Designer.vb">
+    <Compile Include="Properties\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="My Project\Resources.resx">
+    <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>Viewer.Properties</CustomToolNamespace>
     </EmbeddedResource>
-    <None Include="My Project\Settings.settings">
+    <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <AppDesigner Include="My Project\" />
+    <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Reports\Reports.vbproj">
@@ -183,7 +128,7 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

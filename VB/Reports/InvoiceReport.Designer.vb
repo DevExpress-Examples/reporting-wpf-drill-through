@@ -1,5 +1,7 @@
-﻿Namespace Reports
-    Partial Public Class InvoiceReport
+Namespace Reports
+
+    Partial Class InvoiceReport
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,20 +12,20 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Designer generated code"
-
+'#Region "Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
-            Dim xrSummary1 As New DevExpress.XtraReports.UI.XRSummary()
+            Dim xrSummary1 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
             Me.clQuantity = New DevExpress.XtraReports.UI.XRTableCell()
             Me.xrTableCell30 = New DevExpress.XtraReports.UI.XRTableCell()
             Me.OrderId = New DevExpress.XtraReports.Parameters.Parameter()
@@ -88,16 +90,16 @@
             Me.xrTableRow5 = New DevExpress.XtraReports.UI.XRTableRow()
             Me.northwind1 = New Reports.Northwind()
             Me.invoicesTableAdapter = New Reports.NorthwindTableAdapters.InvoicesTableAdapter()
-            DirectCast(Me.xrTable1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.xrTable3, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.xrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.northwind1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.xrTable1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.xrTable3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.xrTable2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.northwind1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me), System.ComponentModel.ISupportInitialize).BeginInit()
             ' 
             ' clQuantity
             ' 
             Me.clQuantity.BackColor = System.Drawing.Color.Empty
-            Me.clQuantity.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.Quantity")})
+            Me.clQuantity.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.Quantity")})
             Me.clQuantity.EvenStyleName = "DataStyle"
             Me.clQuantity.Name = "clQuantity"
             Me.clQuantity.OddStyleName = "DataStyleOdd"
@@ -123,7 +125,7 @@
             ' 
             ' DataStyle
             ' 
-            Me.DataStyle.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
+            Me.DataStyle.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte((0))))
             Me.DataStyle.Name = "DataStyle"
             Me.DataStyle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
             ' 
@@ -139,7 +141,7 @@
             Me.lbShipName.BackColor = System.Drawing.Color.Empty
             Me.lbShipName.BorderColor = System.Drawing.Color.White
             Me.lbShipName.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
-            Me.lbShipName.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ShipName")})
+            Me.lbShipName.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ShipName")})
             Me.lbShipName.Font = New System.Drawing.Font("Tahoma", 8.25F)
             Me.lbShipName.ForeColor = System.Drawing.SystemColors.WindowText
             Me.lbShipName.LocationFloat = New DevExpress.Utils.PointFloat(71.99999F, 0F)
@@ -152,10 +154,10 @@
             ' 
             ' clFreight
             ' 
-            Me.clFreight.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(212)))), (CInt((CByte(212)))), (CInt((CByte(212)))))
+            Me.clFreight.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((212)))))), (CInt(((CByte((212)))))), (CInt(((CByte((212)))))))
             Me.clFreight.BorderColor = System.Drawing.Color.White
             Me.clFreight.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
-            Me.clFreight.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.Freight", "{0:'Frieght:  '$#,##.00}")})
+            Me.clFreight.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.Freight", "{0:'Frieght:  '$#,##.00}")})
             Me.clFreight.Font = New System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold)
             Me.clFreight.ForeColor = System.Drawing.Color.Black
             Me.clFreight.Name = "clFreight"
@@ -166,10 +168,10 @@
             ' 
             ' xrTableRow4
             ' 
-            Me.xrTableRow4.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(255)))), (CInt((CByte(167)))), (CInt((CByte(73)))))
+            Me.xrTableRow4.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((255)))))), (CInt(((CByte((167)))))), (CInt(((CByte((73)))))))
             Me.xrTableRow4.BorderColor = System.Drawing.Color.White
-            Me.xrTableRow4.Borders = (CType(((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Top) Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide))
-            Me.xrTableRow4.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() { Me.xrTableCell22, Me.xrTableCell24, Me.xrTableCell25, Me.xrTableCell26, Me.xrTableCell27, Me.xrTableCell28})
+            Me.xrTableRow4.Borders = CType((((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Top) Or DevExpress.XtraPrinting.BorderSide.Bottom)), DevExpress.XtraPrinting.BorderSide)
+            Me.xrTableRow4.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell22, Me.xrTableCell24, Me.xrTableCell25, Me.xrTableCell26, Me.xrTableCell27, Me.xrTableCell28})
             Me.xrTableRow4.Font = New System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold)
             Me.xrTableRow4.ForeColor = System.Drawing.Color.White
             Me.xrTableRow4.Name = "xrTableRow4"
@@ -234,7 +236,7 @@
             ' clCustomerID
             ' 
             Me.clCustomerID.BackColor = System.Drawing.Color.Empty
-            Me.clCustomerID.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.CustomerID")})
+            Me.clCustomerID.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.CustomerID")})
             Me.clCustomerID.EvenStyleName = "DataStyle"
             Me.clCustomerID.Name = "clCustomerID"
             Me.clCustomerID.OddStyleName = "DataStyleOdd"
@@ -246,7 +248,7 @@
             ' clProductID
             ' 
             Me.clProductID.BackColor = System.Drawing.Color.Empty
-            Me.clProductID.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ProductID")})
+            Me.clProductID.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ProductID")})
             Me.clProductID.EvenStyleName = "DataStyle"
             Me.clProductID.Name = "clProductID"
             Me.clProductID.OddStyleName = "DataStyleOdd"
@@ -260,16 +262,16 @@
             Me.xrTable1.LocationFloat = New DevExpress.Utils.PointFloat(0F, 75F)
             Me.xrTable1.Name = "xrTable1"
             Me.xrTable1.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
-            Me.xrTable1.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() { Me.xrTableRow1, Me.xrTableRow2, Me.xrTableRow3, Me.xrTableRow4})
+            Me.xrTable1.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.xrTableRow1, Me.xrTableRow2, Me.xrTableRow3, Me.xrTableRow4})
             Me.xrTable1.SizeF = New System.Drawing.SizeF(646F, 89F)
             Me.xrTable1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             ' 
             ' xrTableRow1
             ' 
-            Me.xrTableRow1.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(255)))), (CInt((CByte(167)))), (CInt((CByte(73)))))
+            Me.xrTableRow1.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((255)))))), (CInt(((CByte((167)))))), (CInt(((CByte((73)))))))
             Me.xrTableRow1.BorderColor = System.Drawing.Color.White
-            Me.xrTableRow1.Borders = (CType((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide))
-            Me.xrTableRow1.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() { Me.xrTableCell29, Me.xrTableCell30, Me.xrTableCell31, Me.xrTableCell32, Me.xrTableCell33, Me.xrTableCell34, Me.xrTableCell35})
+            Me.xrTableRow1.Borders = CType(((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Bottom)), DevExpress.XtraPrinting.BorderSide)
+            Me.xrTableRow1.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell29, Me.xrTableCell30, Me.xrTableCell31, Me.xrTableCell32, Me.xrTableCell33, Me.xrTableCell34, Me.xrTableCell35})
             Me.xrTableRow1.Font = New System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold)
             Me.xrTableRow1.ForeColor = System.Drawing.Color.White
             Me.xrTableRow1.Name = "xrTableRow1"
@@ -333,10 +335,10 @@
             ' 
             ' xrTableRow2
             ' 
-            Me.xrTableRow2.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(238)))), (CInt((CByte(238)))), (CInt((CByte(238)))))
+            Me.xrTableRow2.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((238)))))), (CInt(((CByte((238)))))), (CInt(((CByte((238)))))))
             Me.xrTableRow2.BorderColor = System.Drawing.Color.White
             Me.xrTableRow2.Borders = DevExpress.XtraPrinting.BorderSide.Left
-            Me.xrTableRow2.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() { Me.clOrderID, Me.clCustomerID, Me.clSalesperson, Me.clOrderDate, Me.clRequiredDate, Me.clShippedDate, Me.clShipVia})
+            Me.xrTableRow2.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.clOrderID, Me.clCustomerID, Me.clSalesperson, Me.clOrderDate, Me.clRequiredDate, Me.clShippedDate, Me.clShipVia})
             Me.xrTableRow2.Font = New System.Drawing.Font("Tahoma", 8.25F)
             Me.xrTableRow2.Name = "xrTableRow2"
             Me.xrTableRow2.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -346,7 +348,7 @@
             ' clOrderID
             ' 
             Me.clOrderID.BackColor = System.Drawing.Color.Empty
-            Me.clOrderID.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.OrderID")})
+            Me.clOrderID.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.OrderID")})
             Me.clOrderID.EvenStyleName = "DataStyle"
             Me.clOrderID.Name = "clOrderID"
             Me.clOrderID.OddStyleName = "DataStyleOdd"
@@ -358,7 +360,7 @@
             ' clSalesperson
             ' 
             Me.clSalesperson.BackColor = System.Drawing.Color.Empty
-            Me.clSalesperson.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.Salesperson")})
+            Me.clSalesperson.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.Salesperson")})
             Me.clSalesperson.EvenStyleName = "DataStyle"
             Me.clSalesperson.Name = "clSalesperson"
             Me.clSalesperson.OddStyleName = "DataStyleOdd"
@@ -370,7 +372,7 @@
             ' clOrderDate
             ' 
             Me.clOrderDate.BackColor = System.Drawing.Color.Empty
-            Me.clOrderDate.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.OrderDate", "{0:MM/dd/yyyy}")})
+            Me.clOrderDate.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.OrderDate", "{0:MM/dd/yyyy}")})
             Me.clOrderDate.EvenStyleName = "DataStyle"
             Me.clOrderDate.Name = "clOrderDate"
             Me.clOrderDate.OddStyleName = "DataStyleOdd"
@@ -382,7 +384,7 @@
             ' clRequiredDate
             ' 
             Me.clRequiredDate.BackColor = System.Drawing.Color.Empty
-            Me.clRequiredDate.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.RequiredDate", "{0:MM/dd/yyyy}")})
+            Me.clRequiredDate.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.RequiredDate", "{0:MM/dd/yyyy}")})
             Me.clRequiredDate.EvenStyleName = "DataStyle"
             Me.clRequiredDate.Name = "clRequiredDate"
             Me.clRequiredDate.OddStyleName = "DataStyleOdd"
@@ -394,7 +396,7 @@
             ' clShippedDate
             ' 
             Me.clShippedDate.BackColor = System.Drawing.Color.Empty
-            Me.clShippedDate.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ShippedDate", "{0:MM/dd/yyyy}")})
+            Me.clShippedDate.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ShippedDate", "{0:MM/dd/yyyy}")})
             Me.clShippedDate.EvenStyleName = "DataStyle"
             Me.clShippedDate.Name = "clShippedDate"
             Me.clShippedDate.OddStyleName = "DataStyleOdd"
@@ -406,7 +408,7 @@
             ' clShipVia
             ' 
             Me.clShipVia.BackColor = System.Drawing.Color.Empty
-            Me.clShipVia.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ShippersCompanyName")})
+            Me.clShipVia.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ShippersCompanyName")})
             Me.clShipVia.EvenStyleName = "DataStyle"
             Me.clShipVia.Name = "clShipVia"
             Me.clShipVia.OddStyleName = "DataStyleOdd"
@@ -417,7 +419,7 @@
             ' 
             ' xrTableRow3
             ' 
-            Me.xrTableRow3.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() { Me.xrTableCell1})
+            Me.xrTableRow3.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell1})
             Me.xrTableRow3.Name = "xrTableRow3"
             Me.xrTableRow3.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
             Me.xrTableRow3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -432,7 +434,7 @@
             ' 
             ' xrTableRow7
             ' 
-            Me.xrTableRow7.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() { Me.xrTableCell2, Me.clFreight})
+            Me.xrTableRow7.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell2, Me.clFreight})
             Me.xrTableRow7.Name = "xrTableRow7"
             Me.xrTableRow7.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
             Me.xrTableRow7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -447,10 +449,10 @@
             ' 
             ' clSubtotal
             ' 
-            Me.clSubtotal.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(212)))), (CInt((CByte(212)))), (CInt((CByte(212)))))
+            Me.clSubtotal.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((212)))))), (CInt(((CByte((212)))))), (CInt(((CByte((212)))))))
             Me.clSubtotal.BorderColor = System.Drawing.Color.White
             Me.clSubtotal.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
-            Me.clSubtotal.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ExtendedPrice")})
+            Me.clSubtotal.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ExtendedPrice")})
             Me.clSubtotal.Font = New System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold)
             Me.clSubtotal.ForeColor = System.Drawing.Color.Black
             Me.clSubtotal.Name = "clSubtotal"
@@ -464,24 +466,24 @@
             ' 
             ' LabelOddStyle
             ' 
-            Me.LabelOddStyle.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(229)))), (CInt((CByte(201)))), (CInt((CByte(148)))))
-            Me.LabelOddStyle.Font = New System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
-            Me.LabelOddStyle.ForeColor = System.Drawing.Color.FromArgb((CInt((CByte(46)))), (CInt((CByte(46)))), (CInt((CByte(51)))))
+            Me.LabelOddStyle.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((229)))))), (CInt(((CByte((201)))))), (CInt(((CByte((148)))))))
+            Me.LabelOddStyle.Font = New System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte((0))))
+            Me.LabelOddStyle.ForeColor = System.Drawing.Color.FromArgb((CInt(((CByte((46)))))), (CInt(((CByte((46)))))), (CInt(((CByte((51)))))))
             Me.LabelOddStyle.Name = "LabelOddStyle"
             Me.LabelOddStyle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomCenter
             ' 
             ' LabelStyle
             ' 
-            Me.LabelStyle.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(255)))), (CInt((CByte(244)))), (CInt((CByte(188)))))
-            Me.LabelStyle.Font = New System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
-            Me.LabelStyle.ForeColor = System.Drawing.Color.FromArgb((CInt((CByte(46)))), (CInt((CByte(46)))), (CInt((CByte(51)))))
+            Me.LabelStyle.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((255)))))), (CInt(((CByte((244)))))), (CInt(((CByte((188)))))))
+            Me.LabelStyle.Font = New System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte((0))))
+            Me.LabelStyle.ForeColor = System.Drawing.Color.FromArgb((CInt(((CByte((46)))))), (CInt(((CByte((46)))))), (CInt(((CByte((51)))))))
             Me.LabelStyle.Name = "LabelStyle"
             Me.LabelStyle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
             ' 
             ' clDiscount
             ' 
             Me.clDiscount.BackColor = System.Drawing.Color.Empty
-            Me.clDiscount.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.Discount", "{0:0%}")})
+            Me.clDiscount.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.Discount", "{0:0%}")})
             Me.clDiscount.EvenStyleName = "DataStyle"
             Me.clDiscount.Name = "clDiscount"
             Me.clDiscount.OddStyleName = "DataStyleOdd"
@@ -492,9 +494,9 @@
             ' 
             ' lbBillTo
             ' 
-            Me.lbBillTo.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(212)))), (CInt((CByte(212)))), (CInt((CByte(212)))))
+            Me.lbBillTo.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((212)))))), (CInt(((CByte((212)))))), (CInt(((CByte((212)))))))
             Me.lbBillTo.BorderColor = System.Drawing.Color.White
-            Me.lbBillTo.Borders = (CType(((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Right) Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide))
+            Me.lbBillTo.Borders = CType((((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Right) Or DevExpress.XtraPrinting.BorderSide.Bottom)), DevExpress.XtraPrinting.BorderSide)
             Me.lbBillTo.Font = New System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold)
             Me.lbBillTo.ForeColor = System.Drawing.Color.Black
             Me.lbBillTo.LocationFloat = New DevExpress.Utils.PointFloat(297F, 0F)
@@ -509,7 +511,7 @@
             Me.lbShipCountry.BackColor = System.Drawing.Color.Empty
             Me.lbShipCountry.BorderColor = System.Drawing.Color.White
             Me.lbShipCountry.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
-            Me.lbShipCountry.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ShipCountry")})
+            Me.lbShipCountry.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ShipCountry")})
             Me.lbShipCountry.Font = New System.Drawing.Font("Tahoma", 8.25F)
             Me.lbShipCountry.ForeColor = System.Drawing.SystemColors.WindowText
             Me.lbShipCountry.LocationFloat = New DevExpress.Utils.PointFloat(71.99999F, 50F)
@@ -525,7 +527,7 @@
             Me.lbCompanyName.BackColor = System.Drawing.Color.Empty
             Me.lbCompanyName.BorderColor = System.Drawing.Color.White
             Me.lbCompanyName.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
-            Me.lbCompanyName.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.CustomersCompanyName")})
+            Me.lbCompanyName.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.CustomersCompanyName")})
             Me.lbCompanyName.Font = New System.Drawing.Font("Tahoma", 8.25F)
             Me.lbCompanyName.ForeColor = System.Drawing.SystemColors.WindowText
             Me.lbCompanyName.LocationFloat = New DevExpress.Utils.PointFloat(363F, 0F)
@@ -538,7 +540,7 @@
             ' 
             ' GroupFooter0
             ' 
-            Me.GroupFooter0.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.xrTable3})
+            Me.GroupFooter0.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.xrTable3})
             Me.GroupFooter0.HeightF = 50F
             Me.GroupFooter0.Name = "GroupFooter0"
             Me.GroupFooter0.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -550,13 +552,13 @@
             Me.xrTable3.LocationFloat = New DevExpress.Utils.PointFloat(0.9999911F, 0F)
             Me.xrTable3.Name = "xrTable3"
             Me.xrTable3.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
-            Me.xrTable3.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() { Me.xrTableRow6, Me.xrTableRow7})
+            Me.xrTable3.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.xrTableRow6, Me.xrTableRow7})
             Me.xrTable3.SizeF = New System.Drawing.SizeF(645.0001F, 50F)
             Me.xrTable3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             ' 
             ' xrTableRow6
             ' 
-            Me.xrTableRow6.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() { Me.xrTableCell8, Me.clSubtotal})
+            Me.xrTableRow6.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.xrTableCell8, Me.clSubtotal})
             Me.xrTableRow6.Name = "xrTableRow6"
             Me.xrTableRow6.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
             Me.xrTableRow6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -564,12 +566,12 @@
             ' 
             ' TitleStyle
             ' 
-            Me.TitleStyle.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(147)))), (CInt((CByte(153)))), (CInt((CByte(148)))))
+            Me.TitleStyle.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((147)))))), (CInt(((CByte((153)))))), (CInt(((CByte((148)))))))
             Me.TitleStyle.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Solid
             Me.TitleStyle.Borders = DevExpress.XtraPrinting.BorderSide.None
             Me.TitleStyle.BorderWidth = 1
-            Me.TitleStyle.Font = New System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
-            Me.TitleStyle.ForeColor = System.Drawing.Color.FromArgb((CInt((CByte(255)))), (CInt((CByte(244)))), (CInt((CByte(188)))))
+            Me.TitleStyle.Font = New System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte((0))))
+            Me.TitleStyle.ForeColor = System.Drawing.Color.FromArgb((CInt(((CByte((255)))))), (CInt(((CByte((244)))))), (CInt(((CByte((188)))))))
             Me.TitleStyle.Name = "TitleStyle"
             Me.TitleStyle.Padding = New DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F)
             Me.TitleStyle.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomCenter
@@ -583,8 +585,8 @@
             ' 
             ' GroupHeader0
             ' 
-            Me.GroupHeader0.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.lbShipTo, Me.lbBillTo, Me.xrTable1, Me.lbShipName, Me.lbShipAddress, Me.lbShipCountry, Me.lbAddress1, Me.lbCountry, Me.lbCompanyName})
-            Me.GroupHeader0.GroupFields.AddRange(New DevExpress.XtraReports.UI.GroupField() { New DevExpress.XtraReports.UI.GroupField("OrderID", DevExpress.XtraReports.UI.XRColumnSortOrder.Descending)})
+            Me.GroupHeader0.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.lbShipTo, Me.lbBillTo, Me.xrTable1, Me.lbShipName, Me.lbShipAddress, Me.lbShipCountry, Me.lbAddress1, Me.lbCountry, Me.lbCompanyName})
+            Me.GroupHeader0.GroupFields.AddRange(New DevExpress.XtraReports.UI.GroupField() {New DevExpress.XtraReports.UI.GroupField("OrderID", DevExpress.XtraReports.UI.XRColumnSortOrder.Descending)})
             Me.GroupHeader0.HeightF = 164F
             Me.GroupHeader0.Name = "GroupHeader0"
             Me.GroupHeader0.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -592,9 +594,9 @@
             ' 
             ' lbShipTo
             ' 
-            Me.lbShipTo.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(212)))), (CInt((CByte(212)))), (CInt((CByte(212)))))
+            Me.lbShipTo.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((212)))))), (CInt(((CByte((212)))))), (CInt(((CByte((212)))))))
             Me.lbShipTo.BorderColor = System.Drawing.Color.White
-            Me.lbShipTo.Borders = (CType(((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Right) Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide))
+            Me.lbShipTo.Borders = CType((((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Right) Or DevExpress.XtraPrinting.BorderSide.Bottom)), DevExpress.XtraPrinting.BorderSide)
             Me.lbShipTo.Font = New System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold)
             Me.lbShipTo.ForeColor = System.Drawing.Color.Black
             Me.lbShipTo.LocationFloat = New DevExpress.Utils.PointFloat(0F, 0F)
@@ -609,7 +611,7 @@
             Me.lbShipAddress.BackColor = System.Drawing.Color.Empty
             Me.lbShipAddress.BorderColor = System.Drawing.Color.White
             Me.lbShipAddress.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
-            Me.lbShipAddress.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ShipAddress")})
+            Me.lbShipAddress.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ShipAddress")})
             Me.lbShipAddress.Font = New System.Drawing.Font("Tahoma", 8.25F)
             Me.lbShipAddress.ForeColor = System.Drawing.SystemColors.WindowText
             Me.lbShipAddress.LocationFloat = New DevExpress.Utils.PointFloat(71F, 25F)
@@ -625,7 +627,7 @@
             Me.lbAddress1.BackColor = System.Drawing.Color.Empty
             Me.lbAddress1.BorderColor = System.Drawing.Color.White
             Me.lbAddress1.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
-            Me.lbAddress1.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.Address")})
+            Me.lbAddress1.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.Address")})
             Me.lbAddress1.Font = New System.Drawing.Font("Tahoma", 8.25F)
             Me.lbAddress1.ForeColor = System.Drawing.SystemColors.WindowText
             Me.lbAddress1.LocationFloat = New DevExpress.Utils.PointFloat(363F, 25F)
@@ -641,7 +643,7 @@
             Me.lbCountry.BackColor = System.Drawing.Color.Empty
             Me.lbCountry.BorderColor = System.Drawing.Color.White
             Me.lbCountry.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
-            Me.lbCountry.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.Country")})
+            Me.lbCountry.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.Country")})
             Me.lbCountry.Font = New System.Drawing.Font("Tahoma", 8.25F)
             Me.lbCountry.ForeColor = System.Drawing.SystemColors.WindowText
             Me.lbCountry.LocationFloat = New DevExpress.Utils.PointFloat(363F, 50F)
@@ -655,7 +657,7 @@
             ' clExtPrice
             ' 
             Me.clExtPrice.BackColor = System.Drawing.Color.Empty
-            Me.clExtPrice.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ExtendedPrice", "{0:$#,##.00}")})
+            Me.clExtPrice.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ExtendedPrice", "{0:$#,##.00}")})
             Me.clExtPrice.EvenStyleName = "DataStyle"
             Me.clExtPrice.Name = "clExtPrice"
             Me.clExtPrice.OddStyleName = "DataStyleOdd"
@@ -667,7 +669,7 @@
             ' clProductName
             ' 
             Me.clProductName.BackColor = System.Drawing.Color.Empty
-            Me.clProductName.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ProductName")})
+            Me.clProductName.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.ProductName")})
             Me.clProductName.EvenStyleName = "DataStyle"
             Me.clProductName.Name = "clProductName"
             Me.clProductName.OddStyleName = "DataStyleOdd"
@@ -677,8 +679,8 @@
             ' 
             ' DataStyleOdd
             ' 
-            Me.DataStyleOdd.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(255)))), (CInt((CByte(244)))), (CInt((CByte(188)))))
-            Me.DataStyleOdd.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
+            Me.DataStyleOdd.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((255)))))), (CInt(((CByte((244)))))), (CInt(((CByte((188)))))))
+            Me.DataStyleOdd.Font = New System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte((0))))
             Me.DataStyleOdd.Name = "DataStyleOdd"
             Me.DataStyleOdd.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
             ' 
@@ -688,7 +690,7 @@
             ' 
             ' PageHeader
             ' 
-            Me.PageHeader.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.xrLabel1})
+            Me.PageHeader.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.xrLabel1})
             Me.PageHeader.HeightF = 32.99999F
             Me.PageHeader.Name = "PageHeader"
             Me.PageHeader.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -696,8 +698,8 @@
             ' 
             ' xrLabel1
             ' 
-            Me.xrLabel1.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.OrderID", "{0:Invoice #}")})
-            Me.xrLabel1.Font = New System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
+            Me.xrLabel1.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.OrderID", "{0:Invoice #}")})
+            Me.xrLabel1.Font = New System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte((0))))
             Me.xrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(1.999982F, 0F)
             Me.xrLabel1.Name = "xrLabel1"
             Me.xrLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -708,7 +710,7 @@
             ' clUnitPrice
             ' 
             Me.clUnitPrice.BackColor = System.Drawing.Color.Empty
-            Me.clUnitPrice.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.UnitPrice", "{0:$#,##.00}")})
+            Me.clUnitPrice.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Invoices.UnitPrice", "{0:$#,##.00}")})
             Me.clUnitPrice.EvenStyleName = "DataStyle"
             Me.clUnitPrice.Name = "clUnitPrice"
             Me.clUnitPrice.OddStyleName = "DataStyleOdd"
@@ -719,7 +721,7 @@
             ' 
             ' Detail
             ' 
-            Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.xrTable2})
+            Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.xrTable2})
             Me.Detail.HeightF = 23F
             Me.Detail.Name = "Detail"
             Me.Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -730,17 +732,17 @@
             Me.xrTable2.LocationFloat = New DevExpress.Utils.PointFloat(0F, 0F)
             Me.xrTable2.Name = "xrTable2"
             Me.xrTable2.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
-            Me.xrTable2.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() { Me.xrTableRow5})
+            Me.xrTable2.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.xrTableRow5})
             Me.xrTable2.SizeF = New System.Drawing.SizeF(646.0001F, 23F)
             Me.xrTable2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
             ' 
             ' xrTableRow5
             ' 
-            Me.xrTableRow5.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(238)))), (CInt((CByte(238)))), (CInt((CByte(238)))))
+            Me.xrTableRow5.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((238)))))), (CInt(((CByte((238)))))), (CInt(((CByte((238)))))))
             Me.xrTableRow5.BorderColor = System.Drawing.Color.White
-            Me.xrTableRow5.Borders = (CType((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide))
+            Me.xrTableRow5.Borders = CType(((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Bottom)), DevExpress.XtraPrinting.BorderSide)
             Me.xrTableRow5.BorderWidth = 1
-            Me.xrTableRow5.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() { Me.clProductID, Me.clProductName, Me.clQuantity, Me.clUnitPrice, Me.clDiscount, Me.clExtPrice})
+            Me.xrTableRow5.Cells.AddRange(New DevExpress.XtraReports.UI.XRTableCell() {Me.clProductID, Me.clProductName, Me.clQuantity, Me.clUnitPrice, Me.clDiscount, Me.clExtPrice})
             Me.xrTableRow5.Font = New System.Drawing.Font("Tahoma", 8.25F)
             Me.xrTableRow5.Name = "xrTableRow5"
             Me.xrTableRow5.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -758,93 +760,153 @@
             ' 
             ' InvoiceReport
             ' 
-            Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() { Me.GroupHeader0, Me.Detail, Me.GroupFooter0, Me.PageHeader, Me.BottomMargin, Me.topMarginBand1})
+            Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.GroupHeader0, Me.Detail, Me.GroupFooter0, Me.PageHeader, Me.BottomMargin, Me.topMarginBand1})
             Me.DataAdapter = Me.invoicesTableAdapter
             Me.DataMember = "Invoices"
             Me.DataSource = Me.northwind1
             Me.ReportPrintOptions.DetailCountOnEmptyDataSource = 0
             Me.DisplayName = "Invoice"
             Me.FilterString = "[OrderID] = ?OrderId"
-            Me.Font = New System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
+            Me.Font = New System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte((0))))
             Me.Margins = New System.Drawing.Printing.Margins(99, 95, 100, 75)
-            Me.Parameters.AddRange(New DevExpress.XtraReports.Parameters.Parameter() { Me.OrderId})
+            Me.Parameters.AddRange(New DevExpress.XtraReports.Parameters.Parameter() {Me.OrderId})
             Me.ReportPrintOptions.PrintOnEmptyDataSource = False
-            Me.StyleSheet.AddRange(New DevExpress.XtraReports.UI.XRControlStyle() { Me.LabelStyle, Me.DataStyle, Me.TitleStyle, Me.LabelOddStyle, Me.DataStyleOdd})
+            Me.StyleSheet.AddRange(New DevExpress.XtraReports.UI.XRControlStyle() {Me.LabelStyle, Me.DataStyle, Me.TitleStyle, Me.LabelOddStyle, Me.DataStyleOdd})
             Me.Version = "11.1"
-            DirectCast(Me.xrTable1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.xrTable3, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.xrTable2, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.northwind1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me, System.ComponentModel.ISupportInitialize).EndInit()
-
+            CType((Me.xrTable1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.xrTable3), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.xrTable2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.northwind1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me), System.ComponentModel.ISupportInitialize).EndInit()
         End Sub
 
-        #End Region
-
+'#End Region
         Private clQuantity As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableCell30 As DevExpress.XtraReports.UI.XRTableCell
-        Private OrderId As DevExpress.XtraReports.Parameters.Parameter
-        Private DataStyle As DevExpress.XtraReports.UI.XRControlStyle
-        Private xrTableCell8 As DevExpress.XtraReports.UI.XRTableCell
-        Private lbShipName As DevExpress.XtraReports.UI.XRLabel
-        Private clFreight As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableRow4 As DevExpress.XtraReports.UI.XRTableRow
-        Private xrTableCell22 As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableCell24 As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableCell25 As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableCell26 As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableCell27 As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableCell28 As DevExpress.XtraReports.UI.XRTableCell
-        Private clCustomerID As DevExpress.XtraReports.UI.XRTableCell
-        Private clProductID As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTable1 As DevExpress.XtraReports.UI.XRTable
-        Private xrTableRow1 As DevExpress.XtraReports.UI.XRTableRow
-        Private xrTableCell29 As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableCell31 As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableCell32 As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableCell33 As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableCell34 As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableCell35 As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableRow2 As DevExpress.XtraReports.UI.XRTableRow
-        Private clOrderID As DevExpress.XtraReports.UI.XRTableCell
-        Private clSalesperson As DevExpress.XtraReports.UI.XRTableCell
-        Private clOrderDate As DevExpress.XtraReports.UI.XRTableCell
-        Private clRequiredDate As DevExpress.XtraReports.UI.XRTableCell
-        Private clShippedDate As DevExpress.XtraReports.UI.XRTableCell
-        Private clShipVia As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableRow3 As DevExpress.XtraReports.UI.XRTableRow
-        Private xrTableCell1 As DevExpress.XtraReports.UI.XRTableCell
-        Private xrTableRow7 As DevExpress.XtraReports.UI.XRTableRow
-        Private xrTableCell2 As DevExpress.XtraReports.UI.XRTableCell
-        Private clSubtotal As DevExpress.XtraReports.UI.XRTableCell
-        Private LabelOddStyle As DevExpress.XtraReports.UI.XRControlStyle
-        Private LabelStyle As DevExpress.XtraReports.UI.XRControlStyle
-        Private clDiscount As DevExpress.XtraReports.UI.XRTableCell
-        Private lbBillTo As DevExpress.XtraReports.UI.XRLabel
-        Private lbShipCountry As DevExpress.XtraReports.UI.XRLabel
-        Private lbCompanyName As DevExpress.XtraReports.UI.XRLabel
-        Private GroupFooter0 As DevExpress.XtraReports.UI.GroupFooterBand
-        Private xrTable3 As DevExpress.XtraReports.UI.XRTable
-        Private xrTableRow6 As DevExpress.XtraReports.UI.XRTableRow
-        Private TitleStyle As DevExpress.XtraReports.UI.XRControlStyle
-        Private BottomMargin As DevExpress.XtraReports.UI.BottomMarginBand
-        Private GroupHeader0 As DevExpress.XtraReports.UI.GroupHeaderBand
-        Private lbShipTo As DevExpress.XtraReports.UI.XRLabel
-        Private lbShipAddress As DevExpress.XtraReports.UI.XRLabel
-        Private lbAddress1 As DevExpress.XtraReports.UI.XRLabel
-        Private lbCountry As DevExpress.XtraReports.UI.XRLabel
-        Private clExtPrice As DevExpress.XtraReports.UI.XRTableCell
-        Private clProductName As DevExpress.XtraReports.UI.XRTableCell
-        Private DataStyleOdd As DevExpress.XtraReports.UI.XRControlStyle
-        Private topMarginBand1 As DevExpress.XtraReports.UI.TopMarginBand
-        Private PageHeader As DevExpress.XtraReports.UI.PageHeaderBand
-        Private xrLabel1 As DevExpress.XtraReports.UI.XRLabel
-        Private clUnitPrice As DevExpress.XtraReports.UI.XRTableCell
-        Private Detail As DevExpress.XtraReports.UI.DetailBand
-        Private xrTable2 As DevExpress.XtraReports.UI.XRTable
-        Private xrTableRow5 As DevExpress.XtraReports.UI.XRTableRow
-        Private northwind1 As Northwind
-        Private invoicesTableAdapter As NorthwindTableAdapters.InvoicesTableAdapter
 
+        Private xrTableCell30 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private OrderId As DevExpress.XtraReports.Parameters.Parameter
+
+        Private DataStyle As DevExpress.XtraReports.UI.XRControlStyle
+
+        Private xrTableCell8 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private lbShipName As DevExpress.XtraReports.UI.XRLabel
+
+        Private clFreight As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTableRow4 As DevExpress.XtraReports.UI.XRTableRow
+
+        Private xrTableCell22 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTableCell24 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTableCell25 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTableCell26 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTableCell27 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTableCell28 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private clCustomerID As DevExpress.XtraReports.UI.XRTableCell
+
+        Private clProductID As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTable1 As DevExpress.XtraReports.UI.XRTable
+
+        Private xrTableRow1 As DevExpress.XtraReports.UI.XRTableRow
+
+        Private xrTableCell29 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTableCell31 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTableCell32 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTableCell33 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTableCell34 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTableCell35 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTableRow2 As DevExpress.XtraReports.UI.XRTableRow
+
+        Private clOrderID As DevExpress.XtraReports.UI.XRTableCell
+
+        Private clSalesperson As DevExpress.XtraReports.UI.XRTableCell
+
+        Private clOrderDate As DevExpress.XtraReports.UI.XRTableCell
+
+        Private clRequiredDate As DevExpress.XtraReports.UI.XRTableCell
+
+        Private clShippedDate As DevExpress.XtraReports.UI.XRTableCell
+
+        Private clShipVia As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTableRow3 As DevExpress.XtraReports.UI.XRTableRow
+
+        Private xrTableCell1 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private xrTableRow7 As DevExpress.XtraReports.UI.XRTableRow
+
+        Private xrTableCell2 As DevExpress.XtraReports.UI.XRTableCell
+
+        Private clSubtotal As DevExpress.XtraReports.UI.XRTableCell
+
+        Private LabelOddStyle As DevExpress.XtraReports.UI.XRControlStyle
+
+        Private LabelStyle As DevExpress.XtraReports.UI.XRControlStyle
+
+        Private clDiscount As DevExpress.XtraReports.UI.XRTableCell
+
+        Private lbBillTo As DevExpress.XtraReports.UI.XRLabel
+
+        Private lbShipCountry As DevExpress.XtraReports.UI.XRLabel
+
+        Private lbCompanyName As DevExpress.XtraReports.UI.XRLabel
+
+        Private GroupFooter0 As DevExpress.XtraReports.UI.GroupFooterBand
+
+        Private xrTable3 As DevExpress.XtraReports.UI.XRTable
+
+        Private xrTableRow6 As DevExpress.XtraReports.UI.XRTableRow
+
+        Private TitleStyle As DevExpress.XtraReports.UI.XRControlStyle
+
+        Private BottomMargin As DevExpress.XtraReports.UI.BottomMarginBand
+
+        Private GroupHeader0 As DevExpress.XtraReports.UI.GroupHeaderBand
+
+        Private lbShipTo As DevExpress.XtraReports.UI.XRLabel
+
+        Private lbShipAddress As DevExpress.XtraReports.UI.XRLabel
+
+        Private lbAddress1 As DevExpress.XtraReports.UI.XRLabel
+
+        Private lbCountry As DevExpress.XtraReports.UI.XRLabel
+
+        Private clExtPrice As DevExpress.XtraReports.UI.XRTableCell
+
+        Private clProductName As DevExpress.XtraReports.UI.XRTableCell
+
+        Private DataStyleOdd As DevExpress.XtraReports.UI.XRControlStyle
+
+        Private topMarginBand1 As DevExpress.XtraReports.UI.TopMarginBand
+
+        Private PageHeader As DevExpress.XtraReports.UI.PageHeaderBand
+
+        Private xrLabel1 As DevExpress.XtraReports.UI.XRLabel
+
+        Private clUnitPrice As DevExpress.XtraReports.UI.XRTableCell
+
+        Private Detail As DevExpress.XtraReports.UI.DetailBand
+
+        Private xrTable2 As DevExpress.XtraReports.UI.XRTable
+
+        Private xrTableRow5 As DevExpress.XtraReports.UI.XRTableRow
+
+        Private northwind1 As Reports.Northwind
+
+        Private invoicesTableAdapter As Reports.NorthwindTableAdapters.InvoicesTableAdapter
     End Class
 End Namespace

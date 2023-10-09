@@ -1,5 +1,6 @@
-﻿Namespace Reports
-    Partial Public Class OrderReport
+Namespace Reports
+
+    Public Partial Class OrderReport
         Inherits DevExpress.XtraReports.UI.XtraReport
 
         Public Sub New()

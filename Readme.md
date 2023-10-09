@@ -7,7 +7,7 @@ This example shows how you can create a drill-through report. A drill-through re
 
 ## Files to Review
 
-* **[MainViewModel.cs](./CS/Viewer/MainViewModel.cs) 
+* [MainViewModel.cs](./CS/Viewer/MainViewModel.cs) 
 * [MainWindow.xaml](./CS/Viewer/MainWindow.xaml)
 
 ## Documentation

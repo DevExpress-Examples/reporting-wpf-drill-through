@@ -1,4 +1,4 @@
-﻿using DevExpress.Mvvm.DataAnnotations;
+using DevExpress.Mvvm.DataAnnotations;
 using DevExpress.Xpf.Printing;
 using DevExpress.XtraReports.UI;
 using Reports;

@@ -1,4 +1,4 @@
-﻿Imports DevExpress.Mvvm.DataAnnotations
+Imports DevExpress.Mvvm.DataAnnotations
 Imports DevExpress.Xpf.Printing
 Imports DevExpress.XtraReports.UI
 Imports Reports

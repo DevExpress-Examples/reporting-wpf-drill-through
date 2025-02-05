@@ -6,15 +6,23 @@
 <!-- default badges end -->
 # Reporting for WPF - Create a Drill-through Report
 
+This example shows a **drill-through report** in a WPF application. This report type keeps the original report compact while still allowing access to more detailed information.
 
-This example shows how you can create a drill-through report. A drill-through report displays a separate report with detailed data after the user clicks an item in the main report.
+The drill-trough report type requires **a parameter binding** to display connected data. You also need to set **a filter string** in the detail report to display product records for the selected category. See the guide for more detailed steps: [Create Drill-Through Reports](https://docs.devexpress.com/XtraReports/4789).
 
-![Reporting for WPF - Create a Drill-through Report](Images/DrillThroughWpf.gif)
+In the app, you can click a _Category_ entry to invoke a detail report with products:
+
+![Reporting for WPF - Click on a Drill-through Report](Images/main-report.png)
+
+Use breadcrumbs to navigate back to the original report. The breadcrumb control automatically appear below the Document Viewer toolbar:
+
+![Reporting for WPF - Go back in a Drill-through Report](Images/detailed-report.png)
+
 
 ## Files to Review
 
-* [MainViewModel.cs](./CS/Viewer/MainViewModel.cs) 
-* [MainWindow.xaml](./CS/Viewer/MainWindow.xaml)
+* [MainWindow.xaml.cs](./CS/MainWindow.xaml.cs) 
+* [MainWindow.xaml](./CS/MainWindow.xaml)
 
 ## Documentation
 

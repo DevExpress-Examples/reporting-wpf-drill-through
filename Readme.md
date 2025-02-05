@@ -21,8 +21,8 @@ Use breadcrumbs to navigate back to the original report. The breadcrumb control 
 
 ## Files to Review
 
-* [MainWindow.xaml.cs](./CS/MainWindow.xaml.cs) 
-* [MainWindow.xaml](./CS/MainWindow.xaml)
+* [MainWindow.xaml.cs](./CS/WpfApp1/MainWindow.xaml.cs) (VB: [MainWindow.xaml.cs](./CS/WpfAppVb/MainWindow.xaml.vb))
+* [MainWindow.xaml](./CS/WpfApp1/MainWindow.xaml) (VB: [MainWindow.xaml](./CS/WpfAppVb/MainWindow.xaml))
 
 ## Documentation
 

@@ -33,7 +33,7 @@ Use breadcrumbs to navigate back to the original report. The breadcrumb control 
 - [Reporting for WPF - Create a Drill-through Report in Code](https://github.com/DevExpress-Examples/Reporting_documentpreviewcontrol-how-to-create-a-drill-down-report-runtime-sample-t337482)
 - [Reporting for WinForms - Create a Drill-through Report](https://github.com/DevExpress-Examples/reporting-winforms-drill-through)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-wpf-drill-through&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-wpf-drill-through&~~~was_helpful=no)
 
